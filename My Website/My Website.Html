@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMAR SHEHATA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background-image.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.5);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #007BFF;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #bbb;
+            line-height: 1.8;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .skill-item, .project-item {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skill-item:hover, .project-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-item h3, .project-item h3 {
+            color: #fff;
+        }
+
+        .project-item p {
+            color: #bbb;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #2a2a2a;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .skill-item, .project-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+            }
+
+            .skill-item, .project-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">أنا مين ؟</a>
+        <a href="#skills">بدرس ايه ؟</a>
+        <a href="#contact">تكلمني علي ايه ؟</a>
+    </nav>
+
+    <header>
+        <img src="d:\PROGRAMING\My Website\SHEHATA.jpg" alt="صورة شخصية" class="profile-picture">
+        <h1>    [ OMAR SHEHATA | عمر شحاته ] أنا</h1>
+        <p> وده الموقع بتاعي  IT  مهندس</p>
+        <p> ⬇️ لينكات السوشيال بتاعتي ⬇️</p>
+        
+        <div class="contact-info">
+
+            
+            
+           
+            
+
+            <a href="https://www.facebook.com/profile.php?id=100013100266921&mibextid=ZbWKwL" target="_blank"><img src="d:\PROGRAMING\My Website\facebook.jpg" alt="صورة شخصية" class="profile-picture"></a>
+
+            <a href="https://api.whatsapp.com/send/?phone=20111538383&text&type=phone_number&app_absent=0" target="_blank"><img src="d:\PROGRAMING\My Website\2047829.jpeg" alt="صورة شخصية" class="profile-picture"></a>
+
+
+            <a href="https://www.instagram.com/0marshehata" target="_blank"><img src="d:\PROGRAMING\My Website\INSTAGRAM.jpg" alt="صورة شخصية" class="profile-picture"></a>
+
+            <a href= "https://535728976.sarhne.com"    target="_blank" ><img src="d:\PROGRAMING\My Website\SARHNE.jpg" alt="صورة شخصية" class="profile-picture"></a>
+
+        </div>
+
+        
+    </header>
+
+    <section id="about" class="content">
+        <h2>أنا مين ؟</h2>
+        <p>أنا مبرمج ويب ولسه طالب وحاليا ده الموقع الشخصي بتاعي اللي هطوره وهبني عليه كل شغلي بعد كده</p>
+    </section>
+
+    <section id="skills">
+        <h2> يا تري بدرس لغات ايه ؟</h2>
+        <div class="skills">
+            <div class="skill-item">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-item">
+                <h3>React</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-item">
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section id="contact" class="content">
+        <h2>تواصل معايا </h2>
+
+        <div class="contact-info">
+
+            
+            
+           
+            
+
+            <a href="https://www.facebook.com/profile.php?id=100013100266921&mibextid=ZbWKwL" target="_blank"><img src="d:\PROGRAMING\My Website\facebook.jpg" alt="صورة شخصية" class="profile-picture"></a>
+
+            <a href="https://api.whatsapp.com/send/?phone=20111538383&text&type=phone_number&app_absent=0" target="_blank"><img src="d:\PROGRAMING\My Website\2047829.jpeg" alt="صورة شخصية" class="profile-picture"></a>
+
+
+            <a href="https://www.instagram.com/0marshehata" target="_blank"><img src="d:\PROGRAMING\My Website\INSTAGRAM.jpg" alt="صورة شخصية" class="profile-picture"></a>
+
+            <a href= "https://535728976.sarhne.com"    target="_blank" ><img src="d:\PROGRAMING\My Website\SARHNE.jpg" alt="صورة شخصية" class="profile-picture"></a>
+
+        </div>
+        
+        
+        
+    </section>
+
+    <footer>
+        
+        <p>&copy; 2024 [ OMAR   SHEHATA ]. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
